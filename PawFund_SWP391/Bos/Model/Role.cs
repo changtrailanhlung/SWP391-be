@@ -7,11 +7,10 @@ using System.Threading.Tasks;
 
 namespace Bos.Model
 {
-    public class Role
+    public class Role : BaseEntity
     {
-        [Key]
-        public int RoleID { get; set; }
-        [Required]
         public string Name { get; set; }
+        public virtual ICollection<User>? Users { get; set; } = new List<User>();
+
     }
 }

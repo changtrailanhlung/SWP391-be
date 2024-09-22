@@ -8,23 +8,13 @@ using System.Threading.Tasks;
 
 namespace Bos.Model
 {
-    [Table("Notification")]
-    public class Notification
+    public class Notification : BaseEntity
     {
-        [Key]
-        public int NotificateID { get; set; }
+        public string Message { get; set; }
+        public string Date { get; set; }
+        public string UserId { get; set; }
 
-        public string? Message { get; set; }
-
-        [Required]
-        public DateTime? Date { get; set; }
-
-        // Foreign key referencing User table
-        [ForeignKey("User")]
-        public int AccountID { get; set;     }  // Foreign key
-
-        // Navigation property
-        public User? User { get; set; }
+        public virtual User? User { get; set; }
     }
 
 }

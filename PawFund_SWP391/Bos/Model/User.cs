@@ -8,23 +8,28 @@ using System.Threading.Tasks;
 
 namespace Bos.Model
 {
-    [Table("User")]
-    public class User
+    public class User : BaseEntity
     {
-        [Key]
-        public int AccountID { get; set; }
-        [Required]
-        public string Name { get; set; }
-        [Required]
+        public string Username { get; set; }
+        public string Email { get; set; }
         public string Password { get; set; }
-        [Required]
-        public string? Email { get; set; }
-        [Required]
-        public string? PhoneNumber { get; set; } = string.Empty;
-        public string? Location { get; set; }
+        public string Phone { get; set; }
+        public string Location { get; set; }
+        public string Token { get; set; }
+        public string TotalDonation { get; set; }
+        public string? Immage { get; set; }
+        public int? RoleId { get; set; }
 
-        public double? TotalDonate { get; set; }
-        public string? Token { get; set; }
+        public virtual Role? Role { get; set; }
+        public virtual ShelterStaff? ShelterStaff { get; set; }
+
+        //public virtual ICollection<Pet>? Pets { get; set; }
+        public virtual ICollection<AdoptionRegistrationForm>? AdopteRegister_Forms { get; set; }
+        public virtual ICollection<Notification>? Notifications { get; set; }
+        public virtual ICollection<Post>? Posts { get; set; }
+        public virtual ICollection<Donation>? Donations { get; set; }
+        public virtual ICollection<Event>? Events { get; set; }
+        public virtual ICollection<Certification>? Certifications { get; set; }
 
     }
 }

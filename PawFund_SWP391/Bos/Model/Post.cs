@@ -8,19 +8,16 @@ using System.Threading.Tasks;
 
 namespace Bos.Model
 {
-    [Table("Post")]
-    public class Post
+    public class Post : BaseEntity
     {
-        [Key]
-        public string PostID {  get; set; }   
+        public string Title { get; set; }
+        public string Content { get; set; }
+        public DateTime CreateDate { get; set; }
+        public DateTime UpdateDate { get; set; }
+        public int UserId { get; set; }
+        public int PetId { get; set; }
 
-        public string? Title { get; set; }
-        public string? Description { get; set; }
-        public DateTime? DateCreate { get; set; }
-        public DateTime? UpdateAt { get; set; }
-        public int AccountID { get; set; }  // Foreign key
-
-        // Navigation property
-        public User? User { get; set; }
+        public virtual User? User { get; set; }
+        public virtual ICollection<FeedBack>? FeedBacks { get; set; }
     }
 }

@@ -11,18 +11,18 @@ namespace Bos
 {
     public class PetContextDB : DbContext
     {
-        private readonly IConfiguration _configuration;
-        private readonly string _connectionstring;
-        public PetContextDB(IConfiguration configuration)
-        {
-            _configuration = configuration;
-            _connectionstring = _configuration.GetConnectionString("default");
-        }
-        public DbSet<User> Users { get; set; }
+        //private readonly IConfiguration _configuration;
+        //private readonly string _connectionstring;
+        //public PetContextDB(IConfiguration configuration)
+        //{
+        //    _configuration = configuration;
+        //    _connectionstring = _configuration.GetConnectionString("default");
+        //}
+        //public DbSet<User> Users { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseMySQL(_connectionstring);
-        }
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    optionsBuilder.UseMySQL(_connectionstring);
+        //}
     }
 }

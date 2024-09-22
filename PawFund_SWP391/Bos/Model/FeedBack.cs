@@ -8,32 +8,13 @@ using System.Threading.Tasks;
 
 namespace Bos.Model
 {
-    [Table("FeedBack")]
-    public class FeedBack
+    public class FeedBack : BaseEntity
     {
-        [Key]
-        public int FeedBackID { get; set; }
-
-        [Required]
-        public string Titile { get; set; }
-
+        public string UserId { get; set; }
         public string Description { get; set; }
+        public DateTime Date { get; set; }
 
-        public DateTime PublicDate { get; set; }
-
-        // Foreign key for User (AccountID)
-        [ForeignKey("User")]
-        public int AccountID { get; set; }
-
-        // Navigation property for User
-        public User? User { get; set; }
-
-        // Foreign key for Post (PostID)
-        [ForeignKey("Post")]
-        public int PostID { get; set; }
-
-        // Navigation property for Post
-        public Post? Post { get; set; }
+        public virtual Post? Post { get; set; }
     }
 
 }
