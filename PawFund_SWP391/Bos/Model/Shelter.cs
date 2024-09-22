@@ -1,18 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Bos.Model
 {
-    public class Shelter : BaseEntity
+    [Table("Shelter")]
+    public class Shelter 
     {
+        [Key]
+        public int ShelterID { get; set; }
+
+        [Required]
         public string Name { get; set; }
+        [Required]
         public string Location { get; set; }
+        [Required]
         public string PhoneNumber { get; set; }
+        [Required]
         public int Capaxity { get; set; }
-        public string Email { get; set; }
+
+        public string? Email { get; set; }
+        [Required]
         public string Website { get; set; }
 
         public virtual ICollection<Pet>? Pets { get; set; }

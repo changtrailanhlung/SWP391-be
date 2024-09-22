@@ -11,6 +11,13 @@ namespace Repository
 {
     public class PawFundContext : DbContext
     {
+        private readonly IConfiguration _configuration;
+        private readonly string _connectionstring;
+        public PawFundContext(IConfiguration configuration)
+        {
+            _configuration = configuration;
+            _connectionstring = _configuration.GetConnectionString("default");
+        }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Pet> Pets { get; set; }
         public virtual DbSet<Donation> Donations { get; set; }
@@ -27,38 +34,30 @@ namespace Repository
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(GetConnectionString(), options =>
-                options.MigrationsAssembly("RepositoryLayer"));
-        }
+    => optionsBuilder.UseSqlServer(_connectionstring);
 
-        private string? GetConnectionString()
-        {
-            IConfiguration configuration = new ConfigurationBuilder()
-                    .SetBasePath(Directory.GetCurrentDirectory())
-                    .AddJsonFile("appsettings.json", true, true).Build();
-            return configuration["ConnectionStrings:DefaultConnection"];
-        }
+        //private string? GetConnectionString()
+        //{
+        //    IConfiguration configuration = new ConfigurationBuilder()
+        //            .SetBasePath(Directory.GetCurrentDirectory())
+        //            .AddJsonFile("appsettings.json", true, true).Build();
+        //    return configuration["ConnectionStrings:default"];
+        //}
 
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<AdoptionRegistrationForm>()
-    .Property(a => a.IncomeAmount)
-    .HasColumnType("decimal(18, 4)");
+            //base.OnModelCreating(modelBuilder);
+            //modelBuilder.Entity<>(entity =>
+            //{
+            //    entity.HasKey(e => e.Id);
 
-            modelBuilder.Entity<Donation>()
-    .Property(a => a.Amount)
-    .HasColumnType("decimal(18, 4)");
-
-            modelBuilder.Entity<User>()
-    .Property(a => a.TotalDonation)
-    .HasColumnType("decimal(18, 4)");
-
-            modelBuilder.Entity<Shelter>()
-    .Property(a => a.DonationAmount)
-    .HasColumnType("decimal(18, 4)");
+            //    entity.HasOne(e => e.User)
+            //          .WithMany()
+            //          .HasForeignKey(e => e.UserId)
+            //          .OnDelete(DeleteBehavior.Restrict);
+            //});
         }
     }
 }

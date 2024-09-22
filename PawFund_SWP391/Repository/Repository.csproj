@@ -16,8 +16,4 @@
     <ProjectReference Include="..\Bos\Bos.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="IRepo\" />
-  </ItemGroup>
-
 </Project>

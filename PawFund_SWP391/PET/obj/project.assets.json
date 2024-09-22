@@ -70,19 +70,6 @@
           }
         }
       },
-      "Humanizer.Core/2.8.26": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/_._": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Humanizer.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "K4os.Compression.LZ4/1.3.8": {
         "type": "package",
         "compile": {
@@ -258,30 +245,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Design/6.0.32": {
+      "Microsoft.EntityFrameworkCore.Relational/6.0.30": {
         "type": "package",
         "dependencies": {
-          "Humanizer.Core": "2.8.26",
-          "Microsoft.EntityFrameworkCore.Relational": "6.0.32"
-        },
-        "compile": {
-          "lib/net6.0/_._": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "build/net6.0/Microsoft.EntityFrameworkCore.Design.props": {}
-        }
-      },
-      "Microsoft.EntityFrameworkCore.Relational/6.0.32": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "6.0.32",
+          "Microsoft.EntityFrameworkCore": "6.0.30",
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0"
         },
         "compile": {
@@ -721,6 +688,37 @@
         },
         "runtime": {
           "lib/net6.0/MySql.EntityFrameworkCore.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MySqlConnector/2.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MySqlConnector.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MySqlConnector.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Pomelo.EntityFrameworkCore.MySql/6.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "[6.0.28, 6.0.999]",
+          "Microsoft.Extensions.DependencyInjection": "6.0.1",
+          "MySqlConnector": "2.1.2"
+        },
+        "compile": {
+          "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.dll": {
             "related": ".xml"
           }
         }
@@ -1250,7 +1248,8 @@
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "BCrypt.Net-Next": "4.0.3",
-          "Bos": "1.0.0"
+          "Bos": "1.0.0",
+          "Pomelo.EntityFrameworkCore.MySql": "6.0.3"
         },
         "compile": {
           "bin/placeholder/Repository.dll": {}
@@ -1263,6 +1262,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "AutoMapper": "12.0.1",
           "Repository": "1.0.0"
         },
         "compile": {
@@ -1376,22 +1376,6 @@
         "lib/netstandard2.0/Google.Protobuf.dll",
         "lib/netstandard2.0/Google.Protobuf.pdb",
         "lib/netstandard2.0/Google.Protobuf.xml"
-      ]
-    },
-    "Humanizer.Core/2.8.26": {
-      "sha512": "OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
-      "type": "package",
-      "path": "humanizer.core/2.8.26",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "humanizer.core.2.8.26.nupkg.sha512",
-        "humanizer.core.nuspec",
-        "lib/netstandard1.0/Humanizer.dll",
-        "lib/netstandard1.0/Humanizer.xml",
-        "lib/netstandard2.0/Humanizer.dll",
-        "lib/netstandard2.0/Humanizer.xml",
-        "logo.png"
       ]
     },
     "K4os.Compression.LZ4/1.3.8": {
@@ -1671,32 +1655,17 @@
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Design/6.0.32": {
-      "sha512": "rzccUMersJKA/+fqoG6bJrMLW77uJYENddYl+0DlfgPl48y+6XAMWhlfcoPPkaDMTqEKCS5QxNbijDagruNQmQ==",
+    "Microsoft.EntityFrameworkCore.Relational/6.0.30": {
+      "sha512": "jr/20ESQhXH9aWOqUQNVaXpC3hq3t4/2sUIhFgyj/6vx2HLWI1ZIBgWjqlz9ePZJBHSeeKrhbgmrnafG228x3A==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.design/6.0.32",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "build/net6.0/Microsoft.EntityFrameworkCore.Design.props",
-        "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll",
-        "lib/net6.0/Microsoft.EntityFrameworkCore.Design.xml",
-        "microsoft.entityframeworkcore.design.6.0.32.nupkg.sha512",
-        "microsoft.entityframeworkcore.design.nuspec"
-      ]
-    },
-    "Microsoft.EntityFrameworkCore.Relational/6.0.32": {
-      "sha512": "K5glZxfgjT5yZjE2tw+SzLWFhUXSt6m6joXl1yM2JQHwb3t7EDC7V75w/v8gZXZLOdZ7t3rqJok7vqtI1arfwA==",
-      "type": "package",
-      "path": "microsoft.entityframeworkcore.relational/6.0.32",
+      "path": "microsoft.entityframeworkcore.relational/6.0.30",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.xml",
-        "microsoft.entityframeworkcore.relational.6.0.32.nupkg.sha512",
+        "microsoft.entityframeworkcore.relational.6.0.30.nupkg.sha512",
         "microsoft.entityframeworkcore.relational.nuspec"
       ]
     },
@@ -2514,6 +2483,49 @@
         "logo-mysql-170x115.png",
         "mysql.entityframeworkcore.8.0.5.nupkg.sha512",
         "mysql.entityframeworkcore.nuspec"
+      ]
+    },
+    "MySqlConnector/2.1.2": {
+      "sha512": "JVokQTUNN3WHAu9Vw8ieeq1dXTFokJiig5P0VJ4f439UxRrsPo6SaVWC8Zdm6mkPeQFhZ0/9afdWa02EY/1j/w==",
+      "type": "package",
+      "path": "mysqlconnector/2.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net45/MySqlConnector.dll",
+        "lib/net45/MySqlConnector.xml",
+        "lib/net461/MySqlConnector.dll",
+        "lib/net461/MySqlConnector.xml",
+        "lib/net471/MySqlConnector.dll",
+        "lib/net471/MySqlConnector.xml",
+        "lib/net5.0/MySqlConnector.dll",
+        "lib/net5.0/MySqlConnector.xml",
+        "lib/net6.0/MySqlConnector.dll",
+        "lib/net6.0/MySqlConnector.xml",
+        "lib/netcoreapp3.1/MySqlConnector.dll",
+        "lib/netcoreapp3.1/MySqlConnector.xml",
+        "lib/netstandard2.0/MySqlConnector.dll",
+        "lib/netstandard2.0/MySqlConnector.xml",
+        "lib/netstandard2.1/MySqlConnector.dll",
+        "lib/netstandard2.1/MySqlConnector.xml",
+        "logo.png",
+        "mysqlconnector.2.1.2.nupkg.sha512",
+        "mysqlconnector.nuspec"
+      ]
+    },
+    "Pomelo.EntityFrameworkCore.MySql/6.0.3": {
+      "sha512": "jEa462J9uNlmpX7qLXpJVOInonwF6E0bFbij6hboTsQJK7thfazh8xwF8fe79kUrp4+6e5A13KT5aLBIkt7RTg==",
+      "type": "package",
+      "path": "pomelo.entityframeworkcore.mysql/6.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.dll",
+        "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.xml",
+        "pomelo.entityframeworkcore.mysql.6.0.3.nupkg.sha512",
+        "pomelo.entityframeworkcore.mysql.nuspec"
       ]
     },
     "Swashbuckle.AspNetCore/6.5.0": {
@@ -3786,7 +3798,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Microsoft.EntityFrameworkCore.Design >= 6.0.32",
+      "Repository >= 1.0.0",
       "Service >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
@@ -3819,6 +3831,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "D:\\Course\\SWP391V2\\SWP391-SE1878\\PawFund_Project\\SWP391-be\\PawFund_SWP391\\Repository\\Repository.csproj": {
+              "projectPath": "D:\\Course\\SWP391V2\\SWP391-SE1878\\PawFund_Project\\SWP391-be\\PawFund_SWP391\\Repository\\Repository.csproj"
+            },
             "D:\\Course\\SWP391V2\\SWP391-SE1878\\PawFund_Project\\SWP391-be\\PawFund_SWP391\\Service\\Service.csproj": {
               "projectPath": "D:\\Course\\SWP391V2\\SWP391-SE1878\\PawFund_Project\\SWP391-be\\PawFund_SWP391\\Service\\Service.csproj"
             }
@@ -3840,12 +3855,6 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": {
-            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[6.0.32, )"
-          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.5.0, )"

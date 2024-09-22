@@ -8,16 +8,23 @@ using System.Threading.Tasks;
 
 namespace Bos.Model
 {
-    public class User : BaseEntity
+    [Table("User")]
+    public class User
     {
+        [Key]
+        public int Id { get; set; }
+        [Required]
         public string Username { get; set; }
-        public string Email { get; set; }
+        public string? Email { get; set; }
+        [Required]
         public string Password { get; set; }
-        public string Phone { get; set; }
-        public string Location { get; set; }
+        public string? Phone { get; set; }
+        public string? Location { get; set; }
         public string Token { get; set; }
-        public string TotalDonation { get; set; }
+        public string? TotalDonation { get; set; }
         public string? Immage { get; set; }
+
+        [ForeignKey("Role")]
         public int? RoleId { get; set; }
 
         public virtual Role? Role { get; set; }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "c/v61ohx8nY=",
+  "dgSpecHash": "VSwu7zs3IO4=",
   "success": true,
   "projectFilePath": "D:\\Course\\SWP391V2\\SWP391-SE1878\\PawFund_Project\\SWP391-be\\PawFund_SWP391\\Service\\Service.csproj",
   "expectedPackageFiles": [
@@ -42,6 +42,8 @@
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\mysql.data\\9.0.0\\mysql.data.9.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\mysql.entityframeworkcore\\8.0.5\\mysql.entityframeworkcore.8.0.5.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\mysqlconnector\\2.1.2\\mysqlconnector.2.1.2.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\6.0.3\\pomelo.entityframeworkcore.mysql.6.0.3.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0\\system.configuration.configurationmanager.8.0.0.nupkg.sha512",

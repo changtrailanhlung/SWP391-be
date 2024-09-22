@@ -668,6 +668,37 @@
           }
         }
       },
+      "MySqlConnector/2.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MySqlConnector.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MySqlConnector.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Pomelo.EntityFrameworkCore.MySql/6.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "[6.0.28, 6.0.999]",
+          "Microsoft.Extensions.DependencyInjection": "6.0.1",
+          "MySqlConnector": "2.1.2"
+        },
+        "compile": {
+          "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -1130,7 +1161,8 @@
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "BCrypt.Net-Next": "4.0.3",
-          "Bos": "1.0.0"
+          "Bos": "1.0.0",
+          "Pomelo.EntityFrameworkCore.MySql": "6.0.3"
         },
         "compile": {
           "bin/placeholder/Repository.dll": {}
@@ -2102,6 +2134,49 @@
         "logo-mysql-170x115.png",
         "mysql.entityframeworkcore.8.0.5.nupkg.sha512",
         "mysql.entityframeworkcore.nuspec"
+      ]
+    },
+    "MySqlConnector/2.1.2": {
+      "sha512": "JVokQTUNN3WHAu9Vw8ieeq1dXTFokJiig5P0VJ4f439UxRrsPo6SaVWC8Zdm6mkPeQFhZ0/9afdWa02EY/1j/w==",
+      "type": "package",
+      "path": "mysqlconnector/2.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net45/MySqlConnector.dll",
+        "lib/net45/MySqlConnector.xml",
+        "lib/net461/MySqlConnector.dll",
+        "lib/net461/MySqlConnector.xml",
+        "lib/net471/MySqlConnector.dll",
+        "lib/net471/MySqlConnector.xml",
+        "lib/net5.0/MySqlConnector.dll",
+        "lib/net5.0/MySqlConnector.xml",
+        "lib/net6.0/MySqlConnector.dll",
+        "lib/net6.0/MySqlConnector.xml",
+        "lib/netcoreapp3.1/MySqlConnector.dll",
+        "lib/netcoreapp3.1/MySqlConnector.xml",
+        "lib/netstandard2.0/MySqlConnector.dll",
+        "lib/netstandard2.0/MySqlConnector.xml",
+        "lib/netstandard2.1/MySqlConnector.dll",
+        "lib/netstandard2.1/MySqlConnector.xml",
+        "logo.png",
+        "mysqlconnector.2.1.2.nupkg.sha512",
+        "mysqlconnector.nuspec"
+      ]
+    },
+    "Pomelo.EntityFrameworkCore.MySql/6.0.3": {
+      "sha512": "jEa462J9uNlmpX7qLXpJVOInonwF6E0bFbij6hboTsQJK7thfazh8xwF8fe79kUrp4+6e5A13KT5aLBIkt7RTg==",
+      "type": "package",
+      "path": "pomelo.entityframeworkcore.mysql/6.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.dll",
+        "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.xml",
+        "pomelo.entityframeworkcore.mysql.6.0.3.nupkg.sha512",
+        "pomelo.entityframeworkcore.mysql.nuspec"
       ]
     },
     "System.Buffers/4.5.1": {
@@ -3279,6 +3354,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "AutoMapper >= 12.0.1",
       "Repository >= 1.0.0"
     ]
   },
@@ -3330,6 +3406,12 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
+        "dependencies": {
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[12.0.1, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

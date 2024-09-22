@@ -8,11 +8,16 @@ using System.Threading.Tasks;
 
 namespace Bos.Model
 {
-    public class Notification : BaseEntity
+    [Table("Notification")]
+    public class Notification 
     {
-        public string Message { get; set; }
+        [Key] public int NotificationID { get; set; }
+        public string? Message { get; set; }
+        [Required]
         public string Date { get; set; }
-        public string UserId { get; set; }
+
+        [ForeignKey("User")]
+        public int UserId { get; set; }
 
         public virtual User? User { get; set; }
     }
