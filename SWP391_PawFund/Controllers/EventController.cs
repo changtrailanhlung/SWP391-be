@@ -30,7 +30,7 @@ namespace SWP391_PawFund.Controllers
 
 		// GET: api/Events/5
 		[HttpGet("{id}")]
-		[Authorize]
+		
 		public async Task<ActionResult<EventResponseModel>> GetEvent(int id)
 		{
 			try
