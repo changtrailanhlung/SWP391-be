@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ServiceLayer.Interfaces
 {
-	public interface IEventService
+	public interface IEventService 
 	{
 		Task<IEnumerable<EventResponseModel>> GetAllEventsAsync();
 		Task<EventResponseModel> GetEventByIdAsync(int id);

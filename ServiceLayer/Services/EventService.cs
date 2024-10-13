@@ -1,5 +1,6 @@
 ﻿using ModelLayer.Entities;
 using RepositoryLayer.UnitOfWork;
+using ServiceLayer.Interfaces;
 using ServiceLayer.RequestModels;
 using ServiceLayer.ResponseModels;
 using System;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace ServiceLayer.Services
 {
-	public class EventService
+	public class EventService : IEventService
 	{
 		private readonly IUnitOfWork _unitOfWork;
 		public EventService(IUnitOfWork unitOfWork)

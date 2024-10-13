@@ -45,9 +45,10 @@ namespace SWP391_PawFund.AppStarts
 			services.AddScoped<INotificationService, NotificationService>();
             services.AddScoped<IUserRoleService, UserRoleService>();
             services.AddScoped<IFileUploadService, FileUploadService>();
+            services.AddScoped<IEventService, EventService>();
 
 
 
-        }
+		}
     }
 }

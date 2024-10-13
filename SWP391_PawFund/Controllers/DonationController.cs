@@ -18,11 +18,14 @@ namespace SWP391_PawFund.Controllers
         private readonly IDonateService _donateService;
         private readonly IUsersService _usersService;
         private readonly IShelterService _shelterService;
-        public DonationController(IDonateService donateService, IUsersService usersService, IShelterService shelterService)
+        private readonly ILogger<DonationController> _logger;
+
+        public DonationController(IDonateService donateService, IUsersService usersService, IShelterService shelterService, ILogger<DonationController> logger)
         {
             _donateService = donateService;
             _usersService = usersService;
             _shelterService = shelterService;
+            _logger = logger;
         }
 
 
@@ -141,6 +144,74 @@ namespace SWP391_PawFund.Controllers
 
 
         // Thêm donation mới
+        //[HttpPost("CreateDonate")]
+        //public async Task<IActionResult> CreateDonation([FromBody] DonationCreateRequestModel request)
+        //{
+        //    if (!ModelState.IsValid)
+        //    {
+        //        return BadRequest(ModelState);
+        //    }
+
+        //    var donor = await _usersService.GetUserByIdAsync(request.DonorId);
+        //    var shelter = await _shelterService.GetShelterByID(request.ShelterId);
+
+        //    if (donor == null)
+        //    {
+        //        return NotFound(new { message = "Donor not found." });
+        //    }
+
+        //    if (shelter == null)
+        //    {
+        //        return NotFound(new { message = "Shelter not found." });
+        //    }
+
+        //    var donation = new Donation
+        //    {
+        //        Amount = request.Amount,
+        //        Date = request.Date,
+        //        DonorId = request.DonorId,
+        //        ShelterId = request.ShelterId
+        //    };
+
+        //    await _donateService.CreateDonationAsync(donation);
+
+        //    // Kiểm tra nullable trước khi ép kiểu
+        //    decimal totalDonation = donor.TotalDonation ?? 0m; 
+        //    decimal donationAmount = shelter.DonationAmount ?? 0m; 
+
+        //    var response = new DonationDetailResponseModel
+        //    {
+        //        Id = donation.Id,
+        //        Amount = donation.Amount,
+        //        Date = donation.Date,
+        //        DonorId = donation.DonorId,
+        //        ShelterId = donation.ShelterId,
+        //        Donor = donor != null ? new UsersResponseModel
+        //        {
+        //            Id = donor.Id,
+        //            Username = donor.Username,
+        //            Email = donor.Email,
+        //            Location = donor.Location,
+        //            Phone = donor.Phone,
+        //            TotalDonation = totalDonation
+        //        } : null,
+        //        Shelter = shelter != null ? new ShelterResponseModel
+        //        {
+        //            Id = shelter.Id,
+        //            Name = shelter.Name,
+        //            Location = shelter.Location,
+        //            PhoneNumber = shelter.PhoneNumber,
+        //            Capacity = shelter.Capaxity,
+        //            Email = shelter.Email,
+        //            Website = shelter.Website,
+        //            DonationAmount = donationAmount
+        //        } : null
+        //    };
+
+        //    return CreatedAtAction(nameof(GetDonationById), new { id = donation.Id }, response);
+        //}
+
+        // Thêm donation mới
         [HttpPost("CreateDonate")]
         public async Task<IActionResult> CreateDonation([FromBody] DonationCreateRequestModel request)
         {
@@ -149,66 +220,64 @@ namespace SWP391_PawFund.Controllers
                 return BadRequest(ModelState);
             }
 
-            var donor = await _usersService.GetUserByIdAsync(request.DonorId);
-            var shelter = await _shelterService.GetShelterByID(request.ShelterId);
-
-            if (donor == null)
+            try
             {
-                return NotFound(new { message = "Donor not found." });
-            }
-
-            if (shelter == null)
-            {
-                return NotFound(new { message = "Shelter not found." });
-            }
-
-            var donation = new Donation
-            {
-                Amount = request.Amount,
-                Date = request.Date,
-                DonorId = request.DonorId,
-                ShelterId = request.ShelterId
-            };
-
-            await _donateService.CreateDonationAsync(donation);
-
-            // Kiểm tra nullable trước khi ép kiểu
-            decimal totalDonation = donor.TotalDonation ?? 0m; 
-            decimal donationAmount = shelter.DonationAmount ?? 0m; 
-
-            var response = new DonationDetailResponseModel
-            {
-                Id = donation.Id,
-                Amount = donation.Amount,
-                Date = donation.Date,
-                DonorId = donation.DonorId,
-                ShelterId = donation.ShelterId,
-                Donor = donor != null ? new UsersResponseModel
+                var donation = new Donation
                 {
-                    Id = donor.Id,
-                    Username = donor.Username,
-                    Email = donor.Email,
-                    Location = donor.Location,
-                    Phone = donor.Phone,
-                    TotalDonation = totalDonation
-                } : null,
-                Shelter = shelter != null ? new ShelterResponseModel
-                {
-                    Id = shelter.Id,
-                    Name = shelter.Name,
-                    Location = shelter.Location,
-                    PhoneNumber = shelter.PhoneNumber,
-                    Capacity = shelter.Capaxity,
-                    Email = shelter.Email,
-                    Website = shelter.Website,
-                    DonationAmount = donationAmount
-                } : null
-            };
+                    Amount = request.Amount,
+                    Date = request.Date,
+                    DonorId = request.DonorId,
+                    ShelterId = request.ShelterId
+                };
 
-            return CreatedAtAction(nameof(GetDonationById), new { id = donation.Id }, response);
+                await _donateService.CreateDonationAsync(donation);
+
+                // Lấy thông tin User và Shelter đã được cập nhật
+                var donor = await _usersService.GetUserByIdAsync(request.DonorId);
+                var shelter = await _shelterService.GetShelterByID(request.ShelterId);
+
+                var response = new DonationDetailResponseModel
+                {
+                    Id = donation.Id,
+                    Amount = donation.Amount,
+                    Date = donation.Date,
+                    DonorId = donation.DonorId,
+                    ShelterId = donation.ShelterId,
+                    Donor = donor != null ? new UsersResponseModel
+                    {
+                        Id = donor.Id,
+                        Username = donor.Username,
+                        Email = donor.Email,
+                        Location = donor.Location,
+                        Phone = donor.Phone,
+                        TotalDonation = donor.TotalDonation ?? 0m
+                    } : null,
+                    Shelter = shelter != null ? new ShelterResponseModel
+                    {
+                        Id = shelter.Id,
+                        Name = shelter.Name,
+                        Location = shelter.Location,
+                        PhoneNumber = shelter.PhoneNumber,
+                        Capacity = shelter.Capaxity,
+                        Email = shelter.Email,
+                        Website = shelter.Website,
+                        DonationAmount = shelter.DonationAmount ?? 0m
+                    } : null
+                };
+
+                return CreatedAtAction(nameof(GetDonationById), new { id = donation.Id }, response);
+            }
+            catch (ArgumentException ex)
+            {
+                _logger.LogError(ex, "Error creating donation: {Message}", ex.Message);
+                return BadRequest(new { message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Unexpected error creating donation.");
+                return StatusCode(500, new { message = "An unexpected error occurred while creating the donation." });
+            }
         }
-
-
 
 
         // Cập nhật donation
