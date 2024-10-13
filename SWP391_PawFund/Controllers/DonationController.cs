@@ -172,6 +172,10 @@ namespace SWP391_PawFund.Controllers
 
             await _donateService.CreateDonationAsync(donation);
 
+            // Kiểm tra nullable trước khi ép kiểu
+            decimal totalDonation = donor.TotalDonation ?? 0m; 
+            decimal donationAmount = shelter.DonationAmount ?? 0m; 
+
             var response = new DonationDetailResponseModel
             {
                 Id = donation.Id,
@@ -186,7 +190,7 @@ namespace SWP391_PawFund.Controllers
                     Email = donor.Email,
                     Location = donor.Location,
                     Phone = donor.Phone,
-                    TotalDonation = (decimal)donor.TotalDonation
+                    TotalDonation = totalDonation
                 } : null,
                 Shelter = shelter != null ? new ShelterResponseModel
                 {
@@ -197,12 +201,13 @@ namespace SWP391_PawFund.Controllers
                     Capacity = shelter.Capaxity,
                     Email = shelter.Email,
                     Website = shelter.Website,
-                    DonationAmount = (decimal)shelter.DonationAmount
+                    DonationAmount = donationAmount
                 } : null
             };
 
             return CreatedAtAction(nameof(GetDonationById), new { id = donation.Id }, response);
         }
+
 
 
 
