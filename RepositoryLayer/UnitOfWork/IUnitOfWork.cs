@@ -1,4 +1,5 @@
-﻿using RepositoryLayer.Repositories;
+﻿using Microsoft.EntityFrameworkCore.Storage;
+using RepositoryLayer.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,5 +16,6 @@ namespace RepositoryLayer.UnitOfWork
         int Commit();
 
         Task<int> CommitAsync();
+        Task<IDbContextTransaction> BeginTransactionAsync();
     }
 }

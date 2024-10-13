@@ -1,4 +1,5 @@
-﻿using RepositoryLayer.Repositories;
+﻿using Microsoft.EntityFrameworkCore.Storage;
+using RepositoryLayer.Repositories;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -75,6 +76,11 @@ namespace RepositoryLayer.UnitOfWork
                     validationErrors.Select(error => $"Properties {error.MemberNames} Error: {error.ErrorMessage}"));
                 throw new Exception(exceptionMessage);
             }
+        }
+
+        public async Task<IDbContextTransaction> BeginTransactionAsync()
+        {
+            return await _context.Database.BeginTransactionAsync();
         }
     }
 }

@@ -50,11 +50,50 @@ namespace ServiceLayer.Services
         }
 
 
-        // Thêm donation mới
+        // Thêm donation mới và cập nhật Shelter và User
         public async Task CreateDonationAsync(Donation donation)
         {
-            await _unitOfWork.Repository<Donation>().InsertAsync(donation);
-            await _unitOfWork.CommitAsync();
+            // Bắt đầu một transaction nếu UnitOfWork hỗ trợ
+            using (var transaction = await _unitOfWork.BeginTransactionAsync())
+            {
+                try
+                {
+                    // Thêm Donation
+                    await _unitOfWork.Repository<Donation>().InsertAsync(donation);
+
+                    // Lấy User và Shelter từ database
+                    var donor = await _unitOfWork.Repository<User>().GetById(donation.DonorId);
+                    var shelter = await _unitOfWork.Repository<Shelter>().GetById(donation.ShelterId);
+
+                    if (donor == null)
+                    {
+                        throw new ArgumentException("Donor not found.", nameof(donation.DonorId));
+                    }
+
+                    if (shelter == null)
+                    {
+                        throw new ArgumentException("Shelter not found.", nameof(donation.ShelterId));
+                    }
+
+                    // Cập nhật TotalDonation của User
+                    donor.TotalDonation = (donor.TotalDonation ?? 0m) + donation.Amount;
+                    _unitOfWork.Repository<User>().Update(donor, donor.Id);
+
+                    // Cập nhật DonationAmount của Shelter
+                    shelter.DonationAmount = (shelter.DonationAmount ?? 0m) + donation.Amount;
+                    _unitOfWork.Repository<Shelter>().Update(shelter, shelter.Id);
+
+                    await _unitOfWork.CommitAsync();
+
+                    await transaction.CommitAsync();
+                }
+                catch (Exception)
+                {
+                    // Rollback transaction nếu có lỗi xảy ra
+                    await transaction.RollbackAsync();
+                    throw;
+                }
+            }
         }
 
         // Cập nhật donation
