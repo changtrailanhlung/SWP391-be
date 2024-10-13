@@ -82,7 +82,7 @@ namespace SWP391_PawFund.Controllers
 
         // POST: api/StatusPet
         [HttpPost("Create_PetStatus")]
-        public async Task<IActionResult> CreateStatus([FromBody] StatusRequestModel request)
+        public async Task<IActionResult> CreateStatus([FromForm] StatusRequestModel request)
         {
             if (!ModelState.IsValid)
             {
@@ -126,7 +126,7 @@ namespace SWP391_PawFund.Controllers
 
         // PUT: api/StatusPet/{id}
         [HttpPut("Update_PetStatus/{id}")]
-        public async Task<IActionResult> UpdateStatus(int id, [FromBody] StatusRequestModel request)
+        public async Task<IActionResult> UpdateStatus(int id, [FromForm] StatusRequestModel request)
         {
             if (id != request.PetId)
             {

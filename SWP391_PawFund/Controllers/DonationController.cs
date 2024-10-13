@@ -141,8 +141,6 @@ namespace SWP391_PawFund.Controllers
             }
         }
 
-
-
         // Thêm donation mới
         //[HttpPost("CreateDonate")]
         //public async Task<IActionResult> CreateDonation([FromBody] DonationCreateRequestModel request)
@@ -213,7 +211,7 @@ namespace SWP391_PawFund.Controllers
 
         // Thêm donation mới
         [HttpPost("CreateDonate")]
-        public async Task<IActionResult> CreateDonation([FromBody] DonationCreateRequestModel request)
+        public async Task<IActionResult> CreateDonation([FromForm] DonationCreateRequestModel request)
         {
             if (!ModelState.IsValid)
             {
@@ -282,7 +280,7 @@ namespace SWP391_PawFund.Controllers
 
         // Cập nhật donation
         [HttpPut("Update_Donate/{id}")]
-        public async Task<IActionResult> UpdateDonation(int id, [FromBody] DonationUpdateRequestModel request)
+        public async Task<IActionResult> UpdateDonation(int id, [FromForm] DonationUpdateRequestModel request)
         {
             var existingDonation = await _donateService.GetDonationsByIdAsync(id);
             if (existingDonation == null)

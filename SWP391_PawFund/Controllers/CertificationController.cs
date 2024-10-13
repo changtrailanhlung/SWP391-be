@@ -51,7 +51,7 @@ namespace SWP391_PawFund.Controllers
         // POST: api/Certification
         [HttpPost]
         [Authorize(Roles = "Admin, ShelterStaff")] // Chỉ Admin và ShelterStaff mới được tạo Certification
-        public async Task<IActionResult> CreateCertificate([FromBody] CertificationRequest request)
+        public async Task<IActionResult> CreateCertificate([FromForm] CertificationRequest request)
         {
             if (!ModelState.IsValid)
             {
@@ -76,7 +76,7 @@ namespace SWP391_PawFund.Controllers
         // PUT: api/Certification/{id}
         [HttpPut("{id}")]
         [Authorize(Roles = "Admin, ShelterStaff")] // Chỉ Admin và ShelterStaff mới được cập nhật Certification
-        public async Task<IActionResult> UpdateCertificate(int id, [FromBody] CertificationRequest request)
+        public async Task<IActionResult> UpdateCertificate(int id, [FromForm] CertificationRequest request)
         {
             if (!ModelState.IsValid)
             {

@@ -40,7 +40,7 @@ namespace SWP391_PawFund.Controllers
 
         // POST: api/Shelter
         [HttpPost("Create_Shelter")]
-        public async Task<IActionResult> CreateShelter([FromBody] Shelter shelter)
+        public async Task<IActionResult> CreateShelter([FromForm] Shelter shelter)
         {
             if (!ModelState.IsValid)
             {
@@ -53,7 +53,7 @@ namespace SWP391_PawFund.Controllers
 
         // PUT: api/Shelter/{id}
         [HttpPut("Update_Shelter/{id}")]
-        public async Task<IActionResult> UpdateShelter(int id, [FromBody] Shelter shelter)
+        public async Task<IActionResult> UpdateShelter(int id, [FromForm] Shelter shelter)
         {
             if (id != shelter.Id)
             {

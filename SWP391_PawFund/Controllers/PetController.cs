@@ -40,7 +40,7 @@ namespace SWP391_PawFund.Controllers
 
         // POST: api/Pet
         [HttpPost("Create_Pet")]
-        public async Task<IActionResult> CreatePet([FromBody] PetCreateRequestModel petCreateRequest)
+        public async Task<IActionResult> CreatePet([FromForm] PetCreateRequestModel petCreateRequest)
         {
             if (!ModelState.IsValid)
             {
