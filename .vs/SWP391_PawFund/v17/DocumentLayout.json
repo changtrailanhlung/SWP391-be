@@ -1,0 +1,537 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F76DFEA5-BD87-4F51-B32F-0E2FE046A139}|SWP391_PawFund\\SWP391_PawFund.csproj|C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\swp391_pawfund\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F76DFEA5-BD87-4F51-B32F-0E2FE046A139}|SWP391_PawFund\\SWP391_PawFund.csproj|solutionrelative:swp391_pawfund\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF61F21E-A5B9-43A3-B343-5ACC017180EA}|ServiceLayer\\ServiceLayer.csproj|c:\\users\\dell\\desktop\\swp_be_binh\\swp391-be\\servicelayer\\services\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF61F21E-A5B9-43A3-B343-5ACC017180EA}|ServiceLayer\\ServiceLayer.csproj|solutionrelative:servicelayer\\services\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF61F21E-A5B9-43A3-B343-5ACC017180EA}|ServiceLayer\\ServiceLayer.csproj|C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\servicelayer\\responsemodels\\eventresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF61F21E-A5B9-43A3-B343-5ACC017180EA}|ServiceLayer\\ServiceLayer.csproj|solutionrelative:servicelayer\\responsemodels\\eventresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF61F21E-A5B9-43A3-B343-5ACC017180EA}|ServiceLayer\\ServiceLayer.csproj|C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\servicelayer\\requestmodels\\eventrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF61F21E-A5B9-43A3-B343-5ACC017180EA}|ServiceLayer\\ServiceLayer.csproj|solutionrelative:servicelayer\\requestmodels\\eventrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF61F21E-A5B9-43A3-B343-5ACC017180EA}|ServiceLayer\\ServiceLayer.csproj|C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\servicelayer\\interfaces\\ieventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF61F21E-A5B9-43A3-B343-5ACC017180EA}|ServiceLayer\\ServiceLayer.csproj|solutionrelative:servicelayer\\interfaces\\ieventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DF42A4-7B84-4565-AB1C-7DD74003BEB8}|ModelLayer\\ModelLayer.csproj|C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\modellayer\\entities\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DF42A4-7B84-4565-AB1C-7DD74003BEB8}|ModelLayer\\ModelLayer.csproj|solutionrelative:modellayer\\entities\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF61F21E-A5B9-43A3-B343-5ACC017180EA}|ServiceLayer\\ServiceLayer.csproj|c:\\users\\dell\\desktop\\swp_be_binh\\swp391-be\\servicelayer\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF61F21E-A5B9-43A3-B343-5ACC017180EA}|ServiceLayer\\ServiceLayer.csproj|solutionrelative:servicelayer\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F76DFEA5-BD87-4F51-B32F-0E2FE046A139}|SWP391_PawFund\\SWP391_PawFund.csproj|C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\swp391_pawfund\\appstarts\\dependencyinjectioncontainers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F76DFEA5-BD87-4F51-B32F-0E2FE046A139}|SWP391_PawFund\\SWP391_PawFund.csproj|solutionrelative:swp391_pawfund\\appstarts\\dependencyinjectioncontainers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF61F21E-A5B9-43A3-B343-5ACC017180EA}|ServiceLayer\\ServiceLayer.csproj|C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\servicelayer\\interfaces\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF61F21E-A5B9-43A3-B343-5ACC017180EA}|ServiceLayer\\ServiceLayer.csproj|solutionrelative:servicelayer\\interfaces\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F76DFEA5-BD87-4F51-B32F-0E2FE046A139}|SWP391_PawFund\\SWP391_PawFund.csproj|C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\swp391_pawfund\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F76DFEA5-BD87-4F51-B32F-0E2FE046A139}|SWP391_PawFund\\SWP391_PawFund.csproj|solutionrelative:swp391_pawfund\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF61F21E-A5B9-43A3-B343-5ACC017180EA}|ServiceLayer\\ServiceLayer.csproj|C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\servicelayer\\responsemodels\\notificationresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF61F21E-A5B9-43A3-B343-5ACC017180EA}|ServiceLayer\\ServiceLayer.csproj|solutionrelative:servicelayer\\responsemodels\\notificationresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF61F21E-A5B9-43A3-B343-5ACC017180EA}|ServiceLayer\\ServiceLayer.csproj|C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\servicelayer\\requestmodels\\notificationrequestmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF61F21E-A5B9-43A3-B343-5ACC017180EA}|ServiceLayer\\ServiceLayer.csproj|solutionrelative:servicelayer\\requestmodels\\notificationrequestmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DF42A4-7B84-4565-AB1C-7DD74003BEB8}|ModelLayer\\ModelLayer.csproj|C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\modellayer\\entities\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DF42A4-7B84-4565-AB1C-7DD74003BEB8}|ModelLayer\\ModelLayer.csproj|solutionrelative:modellayer\\entities\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F76DFEA5-BD87-4F51-B32F-0E2FE046A139}|SWP391_PawFund\\SWP391_PawFund.csproj|C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\swp391_pawfund\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F76DFEA5-BD87-4F51-B32F-0E2FE046A139}|SWP391_PawFund\\SWP391_PawFund.csproj|solutionrelative:swp391_pawfund\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF61F21E-A5B9-43A3-B343-5ACC017180EA}|ServiceLayer\\ServiceLayer.csproj|C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\servicelayer\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF61F21E-A5B9-43A3-B343-5ACC017180EA}|ServiceLayer\\ServiceLayer.csproj|solutionrelative:servicelayer\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF61F21E-A5B9-43A3-B343-5ACC017180EA}|ServiceLayer\\ServiceLayer.csproj|C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\servicelayer\\responsemodels\\userresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF61F21E-A5B9-43A3-B343-5ACC017180EA}|ServiceLayer\\ServiceLayer.csproj|solutionrelative:servicelayer\\responsemodels\\userresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF61F21E-A5B9-43A3-B343-5ACC017180EA}|ServiceLayer\\ServiceLayer.csproj|C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\servicelayer\\requestmodels\\userrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF61F21E-A5B9-43A3-B343-5ACC017180EA}|ServiceLayer\\ServiceLayer.csproj|solutionrelative:servicelayer\\requestmodels\\userrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF61F21E-A5B9-43A3-B343-5ACC017180EA}|ServiceLayer\\ServiceLayer.csproj|C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\servicelayer\\interfaces\\iusersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF61F21E-A5B9-43A3-B343-5ACC017180EA}|ServiceLayer\\ServiceLayer.csproj|solutionrelative:servicelayer\\interfaces\\iusersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DF42A4-7B84-4565-AB1C-7DD74003BEB8}|ModelLayer\\ModelLayer.csproj|C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\modellayer\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DF42A4-7B84-4565-AB1C-7DD74003BEB8}|ModelLayer\\ModelLayer.csproj|solutionrelative:modellayer\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F76DFEA5-BD87-4F51-B32F-0E2FE046A139}|SWP391_PawFund\\SWP391_PawFund.csproj|C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\swp391_pawfund\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F76DFEA5-BD87-4F51-B32F-0E2FE046A139}|SWP391_PawFund\\SWP391_PawFund.csproj|solutionrelative:swp391_pawfund\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F76DFEA5-BD87-4F51-B32F-0E2FE046A139}|SWP391_PawFund\\SWP391_PawFund.csproj|C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\swp391_pawfund\\appstarts\\authconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F76DFEA5-BD87-4F51-B32F-0E2FE046A139}|SWP391_PawFund\\SWP391_PawFund.csproj|solutionrelative:swp391_pawfund\\appstarts\\authconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F76DFEA5-BD87-4F51-B32F-0E2FE046A139}|SWP391_PawFund\\SWP391_PawFund.csproj|C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\swp391_pawfund\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F76DFEA5-BD87-4F51-B32F-0E2FE046A139}|SWP391_PawFund\\SWP391_PawFund.csproj|solutionrelative:swp391_pawfund\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E31520A-44EA-4F92-B09A-7AC085645D56}|RepositoryLayer\\RepositoryLayer.csproj|C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\repositorylayer\\pawfundcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E31520A-44EA-4F92-B09A-7AC085645D56}|RepositoryLayer\\RepositoryLayer.csproj|solutionrelative:repositorylayer\\pawfundcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DF42A4-7B84-4565-AB1C-7DD74003BEB8}|ModelLayer\\ModelLayer.csproj|C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\modellayer\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DF42A4-7B84-4565-AB1C-7DD74003BEB8}|ModelLayer\\ModelLayer.csproj|solutionrelative:modellayer\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DF42A4-7B84-4565-AB1C-7DD74003BEB8}|ModelLayer\\ModelLayer.csproj|C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\modellayer\\entities\\shelter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DF42A4-7B84-4565-AB1C-7DD74003BEB8}|ModelLayer\\ModelLayer.csproj|solutionrelative:modellayer\\entities\\shelter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DF42A4-7B84-4565-AB1C-7DD74003BEB8}|ModelLayer\\ModelLayer.csproj|C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\modellayer\\entities\\donation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DF42A4-7B84-4565-AB1C-7DD74003BEB8}|ModelLayer\\ModelLayer.csproj|solutionrelative:modellayer\\entities\\donation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F76DFEA5-BD87-4F51-B32F-0E2FE046A139}|SWP391_PawFund\\SWP391_PawFund.csproj|C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\swp391_pawfund\\controllers\\donationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F76DFEA5-BD87-4F51-B32F-0E2FE046A139}|SWP391_PawFund\\SWP391_PawFund.csproj|solutionrelative:swp391_pawfund\\controllers\\donationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F76DFEA5-BD87-4F51-B32F-0E2FE046A139}|SWP391_PawFund\\SWP391_PawFund.csproj|C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\swp391_pawfund\\controllers\\statuspetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F76DFEA5-BD87-4F51-B32F-0E2FE046A139}|SWP391_PawFund\\SWP391_PawFund.csproj|solutionrelative:swp391_pawfund\\controllers\\statuspetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF61F21E-A5B9-43A3-B343-5ACC017180EA}|ServiceLayer\\ServiceLayer.csproj|C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\servicelayer\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF61F21E-A5B9-43A3-B343-5ACC017180EA}|ServiceLayer\\ServiceLayer.csproj|solutionrelative:servicelayer\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DF42A4-7B84-4565-AB1C-7DD74003BEB8}|ModelLayer\\ModelLayer.csproj|C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\modellayer\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DF42A4-7B84-4565-AB1C-7DD74003BEB8}|ModelLayer\\ModelLayer.csproj|solutionrelative:modellayer\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DF42A4-7B84-4565-AB1C-7DD74003BEB8}|ModelLayer\\ModelLayer.csproj|C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\modellayer\\entities\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DF42A4-7B84-4565-AB1C-7DD74003BEB8}|ModelLayer\\ModelLayer.csproj|solutionrelative:modellayer\\entities\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EventService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ServiceLayer\\Services\\EventService.cs",
+              "RelativeDocumentMoniker": "ServiceLayer\\Services\\EventService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ServiceLayer\\Services\\EventService.cs",
+              "RelativeToolTip": "ServiceLayer\\Services\\EventService.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T02:50:18.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NotificationService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ServiceLayer\\Services\\NotificationService.cs",
+              "RelativeDocumentMoniker": "ServiceLayer\\Services\\NotificationService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ServiceLayer\\Services\\NotificationService.cs",
+              "RelativeToolTip": "ServiceLayer\\Services\\NotificationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T16:59:31.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "NotificationRequestModels.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ServiceLayer\\RequestModels\\NotificationRequestModels.cs",
+              "RelativeDocumentMoniker": "ServiceLayer\\RequestModels\\NotificationRequestModels.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ServiceLayer\\RequestModels\\NotificationRequestModels.cs",
+              "RelativeToolTip": "ServiceLayer\\RequestModels\\NotificationRequestModels.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T16:57:31.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Event.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ModelLayer\\Entities\\Event.cs",
+              "RelativeDocumentMoniker": "ModelLayer\\Entities\\Event.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ModelLayer\\Entities\\Event.cs",
+              "RelativeToolTip": "ModelLayer\\Entities\\Event.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T15:26:42.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IEventService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ServiceLayer\\Interfaces\\IEventService.cs",
+              "RelativeDocumentMoniker": "ServiceLayer\\Interfaces\\IEventService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ServiceLayer\\Interfaces\\IEventService.cs",
+              "RelativeToolTip": "ServiceLayer\\Interfaces\\IEventService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T15:17:05.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EventRequestModel.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ServiceLayer\\RequestModels\\EventRequestModel.cs",
+              "RelativeDocumentMoniker": "ServiceLayer\\RequestModels\\EventRequestModel.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ServiceLayer\\RequestModels\\EventRequestModel.cs",
+              "RelativeToolTip": "ServiceLayer\\RequestModels\\EventRequestModel.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T17:19:45.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EventController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\SWP391_PawFund\\Controllers\\EventController.cs",
+              "RelativeDocumentMoniker": "SWP391_PawFund\\Controllers\\EventController.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\SWP391_PawFund\\Controllers\\EventController.cs",
+              "RelativeToolTip": "SWP391_PawFund\\Controllers\\EventController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAwwBcAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T17:20:36.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "INotificationService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ServiceLayer\\Interfaces\\INotificationService.cs",
+              "RelativeDocumentMoniker": "ServiceLayer\\Interfaces\\INotificationService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ServiceLayer\\Interfaces\\INotificationService.cs",
+              "RelativeToolTip": "ServiceLayer\\Interfaces\\INotificationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T15:26:08.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EventResponseModel.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ServiceLayer\\ResponseModels\\EventResponseModel.cs",
+              "RelativeDocumentMoniker": "ServiceLayer\\ResponseModels\\EventResponseModel.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ServiceLayer\\ResponseModels\\EventResponseModel.cs",
+              "RelativeToolTip": "ServiceLayer\\ResponseModels\\EventResponseModel.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T18:47:07.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DependencyInjectionContainers.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\SWP391_PawFund\\AppStarts\\DependencyInjectionContainers.cs",
+              "RelativeDocumentMoniker": "SWP391_PawFund\\AppStarts\\DependencyInjectionContainers.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\SWP391_PawFund\\AppStarts\\DependencyInjectionContainers.cs",
+              "RelativeToolTip": "SWP391_PawFund\\AppStarts\\DependencyInjectionContainers.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAqwCwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T15:39:31.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "NotificationController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\SWP391_PawFund\\Controllers\\NotificationController.cs",
+              "RelativeDocumentMoniker": "SWP391_PawFund\\Controllers\\NotificationController.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\SWP391_PawFund\\Controllers\\NotificationController.cs",
+              "RelativeToolTip": "SWP391_PawFund\\Controllers\\NotificationController.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAuwBAAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T17:00:45.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "NotificationResponseModel.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ServiceLayer\\ResponseModels\\NotificationResponseModel.cs",
+              "RelativeDocumentMoniker": "ServiceLayer\\ResponseModels\\NotificationResponseModel.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ServiceLayer\\ResponseModels\\NotificationResponseModel.cs",
+              "RelativeToolTip": "ServiceLayer\\ResponseModels\\NotificationResponseModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T16:59:04.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Notification.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ModelLayer\\Entities\\Notification.cs",
+              "RelativeDocumentMoniker": "ModelLayer\\Entities\\Notification.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ModelLayer\\Entities\\Notification.cs",
+              "RelativeToolTip": "ModelLayer\\Entities\\Notification.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T15:17:18.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserResponseModel.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ServiceLayer\\ResponseModels\\UserResponseModel.cs",
+              "RelativeDocumentMoniker": "ServiceLayer\\ResponseModels\\UserResponseModel.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ServiceLayer\\ResponseModels\\UserResponseModel.cs",
+              "RelativeToolTip": "ServiceLayer\\ResponseModels\\UserResponseModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T15:28:03.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserRequestModel.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ServiceLayer\\RequestModels\\UserRequestModel.cs",
+              "RelativeDocumentMoniker": "ServiceLayer\\RequestModels\\UserRequestModel.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ServiceLayer\\RequestModels\\UserRequestModel.cs",
+              "RelativeToolTip": "ServiceLayer\\RequestModels\\UserRequestModel.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAQwCUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T15:27:48.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IUsersService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ServiceLayer\\Interfaces\\IUsersService.cs",
+              "RelativeDocumentMoniker": "ServiceLayer\\Interfaces\\IUsersService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ServiceLayer\\Interfaces\\IUsersService.cs",
+              "RelativeToolTip": "ServiceLayer\\Interfaces\\IUsersService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAYwBgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T15:26:58.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ServiceLayer\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "ServiceLayer\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ServiceLayer\\Services\\UserService.cs",
+              "RelativeToolTip": "ServiceLayer\\Services\\UserService.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAcwGgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T10:36:39.341Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\SWP391_PawFund\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "SWP391_PawFund\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\SWP391_PawFund\\Controllers\\UserController.cs",
+              "RelativeToolTip": "SWP391_PawFund\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAIsAAAAAAAAAAAAUwKQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T03:16:40.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\SWP391_PawFund\\Program.cs",
+              "RelativeDocumentMoniker": "SWP391_PawFund\\Program.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\SWP391_PawFund\\Program.cs",
+              "RelativeToolTip": "SWP391_PawFund\\Program.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T14:31:24.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "DonationController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\SWP391_PawFund\\Controllers\\DonationController.cs",
+              "RelativeDocumentMoniker": "SWP391_PawFund\\Controllers\\DonationController.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\SWP391_PawFund\\Controllers\\DonationController.cs",
+              "RelativeToolTip": "SWP391_PawFund\\Controllers\\DonationController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAIAwwB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T04:23:40.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ModelLayer\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "ModelLayer\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ModelLayer\\Entities\\User.cs",
+              "RelativeToolTip": "ModelLayer\\Entities\\User.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAzwCUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T14:03:12.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\SWP391_PawFund\\appsettings.json",
+              "RelativeDocumentMoniker": "SWP391_PawFund\\appsettings.json",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\SWP391_PawFund\\appsettings.json",
+              "RelativeToolTip": "SWP391_PawFund\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-30T14:22:22.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Donation.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ModelLayer\\Entities\\Donation.cs",
+              "RelativeDocumentMoniker": "ModelLayer\\Entities\\Donation.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ModelLayer\\Entities\\Donation.cs",
+              "RelativeToolTip": "ModelLayer\\Entities\\Donation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T04:21:59.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AuthConfig.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\SWP391_PawFund\\AppStarts\\AuthConfig.cs",
+              "RelativeDocumentMoniker": "SWP391_PawFund\\AppStarts\\AuthConfig.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\SWP391_PawFund\\AppStarts\\AuthConfig.cs",
+              "RelativeToolTip": "SWP391_PawFund\\AppStarts\\AuthConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T15:43:28.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ServiceLayer\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "ServiceLayer\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ServiceLayer\\Services\\AuthService.cs",
+              "RelativeToolTip": "ServiceLayer\\Services\\AuthService.cs",
+              "ViewState": "AgIAAGsBAAAAAAAAAIBJwHABAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T03:18:14.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "StatusPetController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\SWP391_PawFund\\Controllers\\StatusPetController.cs",
+              "RelativeDocumentMoniker": "SWP391_PawFund\\Controllers\\StatusPetController.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\SWP391_PawFund\\Controllers\\StatusPetController.cs",
+              "RelativeToolTip": "SWP391_PawFund\\Controllers\\StatusPetController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T03:17:12.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ModelLayer\\Entities\\Role.cs",
+              "RelativeDocumentMoniker": "ModelLayer\\Entities\\Role.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ModelLayer\\Entities\\Role.cs",
+              "RelativeToolTip": "ModelLayer\\Entities\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T14:03:23.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ModelLayer\\Entities\\UserRole.cs",
+              "RelativeDocumentMoniker": "ModelLayer\\Entities\\UserRole.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ModelLayer\\Entities\\UserRole.cs",
+              "RelativeToolTip": "ModelLayer\\Entities\\UserRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T14:03:07.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Shelter.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ModelLayer\\Entities\\Shelter.cs",
+              "RelativeDocumentMoniker": "ModelLayer\\Entities\\Shelter.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ModelLayer\\Entities\\Shelter.cs",
+              "RelativeToolTip": "ModelLayer\\Entities\\Shelter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T14:02:15.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ModelLayer\\Entities\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "ModelLayer\\Entities\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\ModelLayer\\Entities\\BaseEntity.cs",
+              "RelativeToolTip": "ModelLayer\\Entities\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T10:40:30.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "PawFundContext.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\RepositoryLayer\\PawFundContext.cs",
+              "RelativeDocumentMoniker": "RepositoryLayer\\PawFundContext.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\SWP_BE_binh\\SWP391-be\\RepositoryLayer\\PawFundContext.cs",
+              "RelativeToolTip": "RepositoryLayer\\PawFundContext.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAmwFIAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T08:06:03.618Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

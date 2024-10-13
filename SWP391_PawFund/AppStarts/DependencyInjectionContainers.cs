@@ -42,7 +42,7 @@ namespace SWP391_PawFund.AppStarts
             services.AddScoped<IPostService, PostService>();
             services.AddScoped<IFeedbackService, FeedbackService>();
             services.AddScoped<ICertificationService, CertificationService>();
-            services.AddScoped<INotificationService, NotificationService>();
+			services.AddScoped<INotificationService, NotificationService>();
             services.AddScoped<IUserRoleService, UserRoleService>();
             services.AddScoped<IFileUploadService, FileUploadService>();
 
