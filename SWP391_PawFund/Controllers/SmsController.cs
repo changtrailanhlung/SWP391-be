@@ -19,7 +19,7 @@ namespace SWP391_PawFund.Controllers
         }
 
         [HttpPost("send-sms")]
-        public IActionResult SendSms(SmsMessage model)
+        public IActionResult SendSms([FromForm]SmsMessage model)
         {
             try
             {

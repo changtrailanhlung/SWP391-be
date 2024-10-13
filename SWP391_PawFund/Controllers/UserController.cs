@@ -194,6 +194,6 @@ namespace SWP391_PawFund.Controllers
         private async Task<bool> UserExists(int id)
         {
             return await _userService.UserExistsAsync(id);
-        }
+        }   
     }
 }

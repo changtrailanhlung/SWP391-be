@@ -19,6 +19,8 @@ namespace ServiceLayer.Interfaces
         Task<User> GetUserByUsernameAsync(string username);
         Task<User> GetUserByEmailAsync(string email);
         Task<UsersResponseModel> GetUserProfile(int id);
+
+
     }
 
 }

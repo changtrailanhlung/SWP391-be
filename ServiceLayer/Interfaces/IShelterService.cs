@@ -9,5 +9,7 @@ namespace ServiceLayer.Interfaces
         IEnumerable<Shelter> GetShelter();
         Task<Shelter> GetShelterByID(int shelterId);
         Task UpdateShelter(Shelter shelter);
+
+        Task<Shelter?> GetShelterByUserIDAsync(int userId);
     }
 }

@@ -118,7 +118,7 @@ namespace SWP391_PawFund.Controllers
                         Email = d.User.Email,
                         Location = d.User.Location,
                         Phone = d.User.Phone,
-                        TotalDonation =(decimal) d.User.TotalDonation
+                        TotalDonation = (decimal)d.User.TotalDonation
                     } : null,
                     Shelter = d.Shelter != null ? new ShelterResponseModel
                     {
@@ -126,10 +126,10 @@ namespace SWP391_PawFund.Controllers
                         Name = d.Shelter.Name,
                         Location = d.Shelter.Location,
                         PhoneNumber = d.Shelter.PhoneNumber,
-                        Capacity = d.Shelter.Capaxity, 
+                        Capacity = d.Shelter.Capaxity,
                         Email = d.Shelter.Email,
                         Website = d.Shelter.Website,
-                        DonationAmount =(decimal) d.Shelter.DonationAmount
+                        DonationAmount = (decimal)d.Shelter.DonationAmount
                     } : null
                 });
 
@@ -140,80 +140,9 @@ namespace SWP391_PawFund.Controllers
                 return StatusCode(500, new { message = "An error occurred while processing your request." });
             }
         }
-
-
-
-        // Thêm donation mới
-        //[HttpPost("CreateDonate")]
-        //public async Task<IActionResult> CreateDonation([FromBody] DonationCreateRequestModel request)
-        //{
-        //    if (!ModelState.IsValid)
-        //    {
-        //        return BadRequest(ModelState);
-        //    }
-
-        //    var donor = await _usersService.GetUserByIdAsync(request.DonorId);
-        //    var shelter = await _shelterService.GetShelterByID(request.ShelterId);
-
-        //    if (donor == null)
-        //    {
-        //        return NotFound(new { message = "Donor not found." });
-        //    }
-
-        //    if (shelter == null)
-        //    {
-        //        return NotFound(new { message = "Shelter not found." });
-        //    }
-
-        //    var donation = new Donation
-        //    {
-        //        Amount = request.Amount,
-        //        Date = request.Date,
-        //        DonorId = request.DonorId,
-        //        ShelterId = request.ShelterId
-        //    };
-
-        //    await _donateService.CreateDonationAsync(donation);
-
-        //    // Kiểm tra nullable trước khi ép kiểu
-        //    decimal totalDonation = donor.TotalDonation ?? 0m; 
-        //    decimal donationAmount = shelter.DonationAmount ?? 0m; 
-
-        //    var response = new DonationDetailResponseModel
-        //    {
-        //        Id = donation.Id,
-        //        Amount = donation.Amount,
-        //        Date = donation.Date,
-        //        DonorId = donation.DonorId,
-        //        ShelterId = donation.ShelterId,
-        //        Donor = donor != null ? new UsersResponseModel
-        //        {
-        //            Id = donor.Id,
-        //            Username = donor.Username,
-        //            Email = donor.Email,
-        //            Location = donor.Location,
-        //            Phone = donor.Phone,
-        //            TotalDonation = totalDonation
-        //        } : null,
-        //        Shelter = shelter != null ? new ShelterResponseModel
-        //        {
-        //            Id = shelter.Id,
-        //            Name = shelter.Name,
-        //            Location = shelter.Location,
-        //            PhoneNumber = shelter.PhoneNumber,
-        //            Capacity = shelter.Capaxity,
-        //            Email = shelter.Email,
-        //            Website = shelter.Website,
-        //            DonationAmount = donationAmount
-        //        } : null
-        //    };
-
-        //    return CreatedAtAction(nameof(GetDonationById), new { id = donation.Id }, response);
-        //}
-
         // Thêm donation mới
         [HttpPost("CreateDonate")]
-        public async Task<IActionResult> CreateDonation([FromBody] DonationCreateRequestModel request)
+        public async Task<IActionResult> CreateDonation([FromForm] DonationCreateRequestModel request)
         {
             if (!ModelState.IsValid)
             {
@@ -225,7 +154,7 @@ namespace SWP391_PawFund.Controllers
                 var donation = new Donation
                 {
                     Amount = request.Amount,
-                    Date = request.Date,
+                    Date = DateTime.UtcNow,
                     DonorId = request.DonorId,
                     ShelterId = request.ShelterId
                 };
@@ -282,7 +211,7 @@ namespace SWP391_PawFund.Controllers
 
         // Cập nhật donation
         [HttpPut("Update_Donate/{id}")]
-        public async Task<IActionResult> UpdateDonation(int id, [FromBody] DonationUpdateRequestModel request)
+        public async Task<IActionResult> UpdateDonation(int id, [FromForm] DonationUpdateRequestModel request)
         {
             var existingDonation = await _donateService.GetDonationsByIdAsync(id);
             if (existingDonation == null)
@@ -304,7 +233,7 @@ namespace SWP391_PawFund.Controllers
             }
 
             existingDonation.Amount = request.Amount;
-            existingDonation.Date = request.Date;
+            existingDonation.Date = DateTime.UtcNow;
             existingDonation.DonorId = request.DonorId;
             existingDonation.ShelterId = request.ShelterId;
 

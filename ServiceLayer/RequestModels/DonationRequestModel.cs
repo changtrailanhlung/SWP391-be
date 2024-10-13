@@ -12,9 +12,10 @@ namespace ServiceLayer.RequestModels
         [Required]
         [Range(1, double.MaxValue, ErrorMessage = "Amount must be greater than 0")]
         public decimal Amount { get; set; }
-        public DateTime Date { get; set; }
+
         [Required]
         public int DonorId { get; set; }
+
         [Required]
         public int ShelterId { get; set; }
     }
@@ -23,9 +24,10 @@ namespace ServiceLayer.RequestModels
         [Required]
         [Range(1, double.MaxValue, ErrorMessage = "Amount must be greater than 0")]
         public decimal Amount { get; set; }
-        public DateTime Date { get; set; }
+
         [Required]
         public int DonorId { get; set; }
+
         [Required]
         public int ShelterId { get; set; }
     }

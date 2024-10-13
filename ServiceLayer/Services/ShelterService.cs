@@ -1,4 +1,5 @@
-﻿using ModelLayer.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using ModelLayer.Entities;
 using RepositoryLayer.UnitOfWork;
 using ServiceLayer.Interfaces;
 using System;
@@ -84,6 +85,49 @@ namespace ServiceLayer.Services
             catch (Exception ex) { throw ex; }
 
         }
+        // Phương thức mới
+        public async Task<Shelter?> GetShelterByUserIDAsync(int userId)
+        {
+            var user = await _unitOfWork.Repository<User>().GetAll()
+                .Include(u => u.UserRoles)
+                    .ThenInclude(ur => ur.Role)
+                .FirstOrDefaultAsync(u => u.Id == userId);
 
+            if (user == null)
+            {
+                throw new ArgumentException("User not found.", nameof(userId));
+            }
+
+            // Kiểm tra xem người dùng có vai trò ShelterStaff không
+            bool isShelterStaff = user.UserRoles.Any(ur => ur.Role.Name.Equals("ShelterStaff", StringComparison.OrdinalIgnoreCase));
+
+            if (!isShelterStaff)
+            {
+                return null;
+            }
+
+            if (user.ShelterId == null)
+            {
+                return null;
+            }
+
+            // Lấy Shelter dựa trên ShelterId của người dùng và chuyển đổi thành ShelterDto
+            var shelterDto = await _unitOfWork.Repository<Shelter>().GetAll()
+                .Where(s => s.Id == user.ShelterId.Value)
+                .Select(s => new Shelter
+                {
+                    Id = s.Id,
+                    Name = s.Name,
+                    Location = s.Location,
+                    PhoneNumber = s.PhoneNumber,
+                    Capaxity = s.Capaxity,
+                    Email = s.Email,
+                    Website = s.Website,
+                    DonationAmount = s.DonationAmount
+                })
+                .FirstOrDefaultAsync();
+
+            return shelterDto;
+        }
     }
 }

@@ -12,10 +12,12 @@ namespace SWP391_PawFund.Controllers
     public class ShelterController : ControllerBase
     {
         private readonly IShelterService _shelterService;
+        private readonly ILogger<ShelterController> _logger;
 
-        public ShelterController(IShelterService shelterService)
+        public ShelterController(IShelterService shelterService, ILogger<ShelterController> logger)
         {
             _shelterService = shelterService;
+            _logger = logger;
         }
 
         // GET: api/Shelter
@@ -40,7 +42,7 @@ namespace SWP391_PawFund.Controllers
 
         // POST: api/Shelter
         [HttpPost("Create_Shelter")]
-        public async Task<IActionResult> CreateShelter([FromBody] Shelter shelter)
+        public async Task<IActionResult> CreateShelter([FromForm] Shelter shelter)
         {
             if (!ModelState.IsValid)
             {
@@ -53,7 +55,7 @@ namespace SWP391_PawFund.Controllers
 
         // PUT: api/Shelter/{id}
         [HttpPut("Update_Shelter/{id}")]
-        public async Task<IActionResult> UpdateShelter(int id, [FromBody] Shelter shelter)
+        public async Task<IActionResult> UpdateShelter(int id, [FromForm] Shelter shelter)
         {
             if (id != shelter.Id)
             {
@@ -82,6 +84,30 @@ namespace SWP391_PawFund.Controllers
 
             await _shelterService.DeleteShelter(id);
             return Ok(new { message = "Shelter have been Deleted successfully." });
+        }
+        // Endpoint mới: GET api/Shelter/ByStaff/{userId}
+        [HttpGet("ByStaff/{userId}")]
+        public async Task<IActionResult> GetShelterByStaffId(int userId)
+        {
+            try
+            {
+                var shelterDto = await _shelterService.GetShelterByUserIDAsync(userId);
+                if (shelterDto == null)
+                {
+                    return BadRequest(new { message = "User is not a ShelterStaff or no shelter associated." });
+                }
+                return Ok(shelterDto);
+            }
+            catch (ArgumentException ex)
+            {
+                _logger.LogWarning(ex, "GetShelterByStaffId: {Message}", ex.Message);
+                return NotFound(new { message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while getting shelter by staff ID.");
+                return StatusCode(500, new { message = "An error occurred while processing your request." });
+            }
         }
     }
 }
