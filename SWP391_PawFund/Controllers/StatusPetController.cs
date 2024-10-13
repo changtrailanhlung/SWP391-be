@@ -20,7 +20,7 @@ namespace SWP391_PawFund.Controllers
         }
 
         // GET: api/StatusPet/pet/{petId}
-        [HttpGet("pet/{petId}")]
+        [HttpGet("Pet/{petId}")]
         public ActionResult<IEnumerable<StatusResponseModel>> GetStatusesForPet(int petId)
         {
             var statuses = _statusPetService.GetStatusesForPet(petId);
@@ -81,7 +81,7 @@ namespace SWP391_PawFund.Controllers
         }
 
         // POST: api/StatusPet
-        [HttpPost]
+        [HttpPost("Create_PetStatus")]
         public async Task<IActionResult> CreateStatus([FromBody] StatusRequestModel request)
         {
             if (!ModelState.IsValid)
@@ -125,7 +125,7 @@ namespace SWP391_PawFund.Controllers
         }
 
         // PUT: api/StatusPet/{id}
-        [HttpPut("{id}")]
+        [HttpPut("Update_PetStatus/{id}")]
         public async Task<IActionResult> UpdateStatus(int id, [FromBody] StatusRequestModel request)
         {
             if (id != request.PetId)
@@ -160,7 +160,7 @@ namespace SWP391_PawFund.Controllers
         }
 
         // DELETE: api/StatusPet/{id}
-        [HttpDelete("{id}")]
+        [HttpDelete("Remove_PetStatus/{id}")]
         public async Task<IActionResult> DeleteStatus(int id)
         {
             var status = await _statusPetService.GetStatusByIdAsync(id);

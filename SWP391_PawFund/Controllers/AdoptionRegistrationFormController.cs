@@ -106,7 +106,7 @@ namespace SWP391_PawFund.Controllers
 
 
         // POST: api/AdoptionRegistrationForm
-        [HttpPost]
+        [HttpPost("Create_Adopte_Form")]
         [Authorize]
         public async Task<IActionResult> CreateForm([FromForm] AdoptionRegistrationFormRequest request)
         {
@@ -149,7 +149,7 @@ namespace SWP391_PawFund.Controllers
         }
 
         // PUT: api/AdoptionRegistrationForm/{id}
-        [HttpPut("{id}")]
+        [HttpPut("Update_Adopte_Form/{id}")]
         [Authorize]
         public async Task<IActionResult> UpdateForm(int id, [FromForm] AdoptionRegistrationFormRequest request)
         {
@@ -189,7 +189,7 @@ namespace SWP391_PawFund.Controllers
         }
 
         // DELETE: api/AdoptionRegistrationForm/{id}
-        [HttpDelete("{id}")]
+        [HttpDelete("Remove_Adopte_Form/{id}")]
         [Authorize]
         public async Task<IActionResult> DeleteForm(int id)
         {

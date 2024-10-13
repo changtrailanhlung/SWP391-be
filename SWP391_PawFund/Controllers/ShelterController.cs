@@ -39,7 +39,7 @@ namespace SWP391_PawFund.Controllers
         }
 
         // POST: api/Shelter
-        [HttpPost]
+        [HttpPost("Create_Shelter")]
         public async Task<IActionResult> CreateShelter([FromBody] Shelter shelter)
         {
             if (!ModelState.IsValid)
@@ -52,7 +52,7 @@ namespace SWP391_PawFund.Controllers
         }
 
         // PUT: api/Shelter/{id}
-        [HttpPut("{id}")]
+        [HttpPut("Update_Shelter/{id}")]
         public async Task<IActionResult> UpdateShelter(int id, [FromBody] Shelter shelter)
         {
             if (id != shelter.Id)
@@ -71,7 +71,7 @@ namespace SWP391_PawFund.Controllers
         }
 
         // DELETE: api/Shelter/{id}
-        [HttpDelete("{id}")]
+        [HttpDelete("Remove_Shelter/{id}")]
         public async Task<IActionResult> DeleteShelter(int id)
         {
             var shelter = await _shelterService.GetShelterByID(id);

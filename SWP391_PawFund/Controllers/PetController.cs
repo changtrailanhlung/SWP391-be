@@ -39,7 +39,7 @@ namespace SWP391_PawFund.Controllers
         }
 
         // POST: api/Pet
-        [HttpPost]
+        [HttpPost("Create_Pet")]
         public async Task<IActionResult> CreatePet([FromBody] PetCreateRequestModel petCreateRequest)
         {
             if (!ModelState.IsValid)
@@ -71,7 +71,7 @@ namespace SWP391_PawFund.Controllers
 
 
         // PUT: api/Pet/{id}
-        [HttpPut("{id}")]
+        [HttpPut("Update_Pet/{id}")]
         public async Task<IActionResult> UpdatePet(int id, [FromBody] PetUpdateRequestModel updatedPet)
         {
             if (!ModelState.IsValid)
@@ -108,7 +108,7 @@ namespace SWP391_PawFund.Controllers
 
 
         // DELETE: api/Pet/{id}
-        [HttpDelete("{id}")]
+        [HttpDelete("Remove_Pet/{id}")]
         public async Task<IActionResult> DeletePet(int id)
         {
             var pet = await _petService.GetPetById(id);
